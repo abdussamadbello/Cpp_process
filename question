@@ -1,0 +1,68 @@
+A process is a scheduled CPU activity caused by a user or system’s itself. For example, a word
+processor, a Web browser, and an e-mail package. Even if a user can execute one program at a time,
+the operating system may need to support its own internal programmed activities such as memory
+management, etc. All these activities are similar, so they are called processes. Prioritizing processes
+is crucial for most of the operating systems. In real-time operating systems, some low priority
+processes (i.e. Web browser) need to be preempted and replaced by some other higher priority
+processes (i.e. memory management) to guarantee that higher priority processes run firstly. To
+simplify this process, ready-lists of operating systems are sometimes sorted according to the priority
+of processes.
+
+You are supposed to create a prioritized process ready list. A textbook based
+Linked List and Process class implementations are provided to assist you.
+You should add and implement a function called template <typename T> void
+prioritized_insert(T& new_item) to the LinkedList class. 
+
+This function must make some checks before
+inserting the element into the list to keep the list sorted in descending order according to the
+Processes’ priority. High priority means high importance and vice versa.
+
+Your second job is to create a main function that generates an output similar to the sample run by
+using the provided header files. In other words;
+1. you should create a prioritized linked list for processes,
+2. add some predefined processes to the list in the main,
+3. finally, print the contents of the list according to the sample run.
+
+Do not change anything in the header files except for the function that you have been asked to
+write!
+
+of your total grade.
+Sample run 
+Inserting ->
+PROCESS NAME: Process 0
+PROCESS ID: 0
+PROCESS PRIORITY: 54
+Inserting ->
+PROCESS NAME: Process 1
+PROCESS ID: 1
+PROCESS PRIORITY: 24
+Inserting ->
+PROCESS NAME: Process 2
+PROCESS ID: 2
+PROCESS PRIORITY: 45
+Inserting ->
+PROCESS NAME: Process 3
+PROCESS ID: 3
+PROCESS PRIORITY: 63
+Inserting ->
+PROCESS NAME: Process 4
+PROCESS ID: 4
+PROCESS PRIORITY: 14
+Currently there are 5 processes in the linked list.
+Processes in the linked list that are sorted by their priorities are as
+follows:
+PROCESS NAME: Process 3
+PROCESS ID: 3
+PROCESS PRIORITY: 63
+PROCESS NAME: Process 0
+PROCESS ID: 0
+PROCESS PRIORITY: 54
+PROCESS NAME: Process 2
+PROCESS ID: 2
+PROCESS PRIORITY: 45
+PROCESS NAME: Process 1
+PROCESS ID: 1
+PROCESS PRIORITY: 24
+PROCESS NAME: Process 4
+PROCESS ID: 4
+PROCESS PRIORITY: 14
